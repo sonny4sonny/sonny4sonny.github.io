@@ -1,32 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Hello, World!</title>
-
-<style>
-body{
-    margin:0;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#16272b;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-h1{
-    font-size:6rem;
-    color:#f7df9c;
-    letter-spacing:8px;
-    text-transform:uppercase;
-    text-shadow:
-    0 0 10px #f7df9c ;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Project Research</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<h1>Hello, World!</h1>
+<!-- header with site name, my tag and navigation, flexbox is spacing them out evenly with space-between and center-->
+  <header>
+    <p class="small">SHOEGAZERRR</p>
+    <nav>
+      <a href="#info">Project</a>
+      <a href="#responses">Responses</a>
+    </nav>
+    <p class="small">Research Reflection</p>
+  </header>
+<!-- hero section with clamp explained in css comments -->
+  <main>
+    <section class="hero">
+      <h1>Interactive Web Project Research</h1>
+    </section>
+
+    <!-- intro section split into two column grid -->
+    <section id="info" class="intro">
+      <div>
+        <h2>Project Details</h2>
+        <p><strong>Project Title:</strong> Interactability insights</p>
+        <p><strong>Project URL:</strong> palat2023.com</p>
+        <p><strong>Date Accessed:</strong> 10/03/2026</p>
+        <p><strong>References</strong> w3schools.com, claude ai, google summary</p>
+      </div>
+      <div>
+      </div>
+    </section>
+
+    <section id="responses">
+      <h2 class="responses-heading">Written Responses</h2>
+<!-- each article element has one question and one answer, with the two column grid set in css aligning them to be side by side -->
+      <article>
+        <h3>1. What was the first thing you paid attention to when interacting with the experience?</h3>
+        <p> The first thing I noticed was the unique form of interaction with the screen split into four layers controlled and manipulated by mouseover and the subjective narrative that is able to create.  </p>
+      </article>
+<!-- changed from paragraph to list using ul and li, had to change css to re-add box formatting and change padding  -->
+      <article>
+        <h3>2. Spend two minutes with the experience and create a list of each of your discrete actions.</h3>
+        <ul> <li> Moved the mouse around the screen to discover image displacement on hovering </li>
+            <li> Scrolled down to see additional content</li> 
+            <li>Hovered over contact links and bottom screen text </li>  
+            <li>Clicked links to confirm they are active</li>
+            <li>Tried to find portfolio link or section to no avail</li>
+            <li>Played around with the pixel displacement effect </li>
+          </ul>
+      </article>
+
+      <article>
+        <h3>3. What part of the experience did you spend the most time engaging with?</h3>
+        <p>I definetely spent the most time on the pixel displacement effec, I was actively trying to push its limits and see if I could get it to fail. The function of it is very smooth and held up well, I eventually managed to move fast enough to split the pixels into four even boxes.  </p>
+      </article>
+
+      <article>
+        <h3>4. What was the most common action in your two minute interaction with the experience?</h3>
+        <p>Most common action was definetely a lot of rapid, darting hovering movements with my cursor seeing how much interacibility and function was added to the site.  </p>
+      </article>
+
+      <article>
+        <h3>5. What is your impression of the intended primary goal of the interactive experience?</h3>
+        <p>From my experience testing the site, I think it is safe to assume that the primary goal is as a digital business card and proof of work. The designer, Palat has made this as a subltle show of force portfolio to visualise his web design capabilities for intended clients. In doing this, users who find the site, or potential clients who may have it sent to them are able to see his capabilites and style first hand.  </p>
+      </article>
+
+      <article>
+        <h3>6. How does the interactive experience communicate this primary goal?</h3>
+        <p>The sites experience communicates the designeres ability through impressive displays of both HTML, CSS and JS. All languages working well together to create a very functional, visually flashy and impressive site that clearly demonstrates the designers technical and design ability. </p>
+      </article>
+
+      <article>
+        <h3>7. What is your impression of how the experience should be interacted with over time?</h3>
+        <p>The site has no login, no account, no navigation or deeper pages to explore and no call to action beyond contacting Palat for work. The structure suggests that once you have explored the interacibility and chosen whether to contact the designer, there is no mechanism for return engagement. </p>
+      </article>
+
+      <article>
+        <h3>8. How does the interactive experience communicate how it should be interacted with over time?</h3>
+        <p>Again, there is not much in the way of user retention on this site. It serves a simple purpose of being visually impressive and providing a contact link for the designer, outside of that there is little to no reason to revisit the page.  </p>
+      </article>
+
+      <article>
+        <h3>9. What other media forms, digital or otherwise, does the experience reference?</h3>
+        <p>The site definetely relies on inspiration from digital art installations, eg the pixel displacement feeling much like modern generative art. There is also reference to motion graphic, with the rotating text resembling sort of film credits and title sequences. I would argue there is editorial deisgn inspiration, with the spaced out typography drawing me back to fashion print layouts for magazines. Although at it's core, the avant-garde overall design is very in line with modern designer portfolios. </p>
+      </article>
+
+      <article>
+        <h3>10. What do these references communicate about how you should act when engaging with the experience?</h3>
+        <p>I think it suggests that the engagment and interaction should be non-linear, curious and creative. It encourages the user to slow down, explore and interact rather than find the call to action and complete the function.  The interaction rewards exploration. </p>
+      </article>
+
+      <article>
+        <h3>11. What do these references communicate about how you should feel when engaging with the experience?</h3>
+        <p>As with modern art installations, the site earns aesthetic appreciation.  There is also a implicit feeling of being impressed, the designer seems to make a bold claim about their ambition and talent and the site feels designed to validate this. </p>
+      </article>
+
+      <article>
+        <h3>12. What is the most frustrating part of the interaction to you and what makes that part frustrating?</h3>
+        <p>I think the 'frustrating' bit is the absence of an actual portfolio in all aspects. The site is a technically impressive feat, but is just a landing page. There is no way to see the rest of the designers work outside of the minimal display, no way to explore their range of work or case studies. Considering it is a site built to attract clients or employers, this is a noteable gap in planning. </p>
+      </article>
+
+      <article>
+        <h3>13. What is the most satisfying part of the interaction to you and what makes that part satisfying?</h3>
+        <p>Again, the pixel displacement effect is beyond satisfying. The seemless transition as you scroll to the immediate and impressively functional interaction creates a real sense of agency and fun. It's technically quite impressive and makes the site memorable. </p>
+      </article>
+    </section>
+  </main>
+
+
 </body>
 </html>

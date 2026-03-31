@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* basic principles outlined here for easy updates that can be applied to entire document */
+:root {
+  --bg: #ffffff;
+  --text: #16272b;
+  --line: #16272b;
+  --accent: #197cc7;
+  --accent-dark: #236ec4;
+}
+/* body style, eg width and margin centres all my content without having to add wrappers and other things */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* flexboc used for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+/* added bigger padding here to create space between the header and the title */
+.hero {
+  padding: 6rem 0 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* had to ask ai how to make the heading size bigger and remain fluid, it suggested this clamp function which I then found on w3schools and played with the parameters untill it looked nice  */
+.hero h1 {
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  max-width: 8ch;
+}
+/* split this into a 2 column grid to i could have text side by side, wish Id known about those grid games before I tried to figure this one out lmao */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0 3rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.intro h2,
+.responses-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* had to remove max width to allow room for references to not collapse */
+.intro p {
+  margin-bottom: 0.75rem;
+  
+}
+
+#responses {
+  padding-top: 1.5rem;
+}
+/* article grid similar to intro, split into two columns for questions and answers to be side by side */
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+article h3 {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  max-width: 24ch;
+}
+/* added article ul and defined padding so that the list would not sit on border edge */
+article p, article ul {
+  background: rgba(239, 159, 74, 0.15);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1rem 1rem 2rem;
+  min-height: 110px;
+
+}
+/* this one I had to google a lot, this rule allows the two column grid to collapse into a single column on small screens like phones smaller than 800px, found on w3schools and wrote it until it worked lol  */
+@media (max-width: 800px) {
+  header,
+  .intro,
+  article {
+    display: block;
+  }
+
+  nav {
+    margin: 0.75rem 0;
+  }
+
+  .intro div,
+  article h3 {
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+}
